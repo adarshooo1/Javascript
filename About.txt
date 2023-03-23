@@ -1,0 +1,32 @@
+Variable In Javascript.
+
+In JavaScript, let, var, and const are used to declare variables, but they differ in how they are scoped and how their values can be changed. Here are the main differences:
+
+Scope: var has function scope, which means it is accessible within the function in which it is declared, or globally if declared outside of a function. let and const have block scope, which means they are only accessible within the block in which they are declared (i.e., between curly braces).
+
+Hoisting: var is hoisted to the top of its scope, which means it can be used before it is declared, but its value will be undefined. let and const are not hoisted, so they cannot be used before they are declared.
+
+Reassignment: var and let variables can be reassigned a new value, while const variables cannot be reassigned. However, the value of a const variable can still be mutable if it is an object or an array, meaning its properties or elements can be changed.
+
+Here's an example to illustrate these differences:
+
+javascript
+Copy code
+function test() {
+  var x = 1;
+  let y = 2;
+  const z = 3;
+
+  if (true) {
+    var x = 4;
+    let y = 5;
+    const z = 6;
+    console.log(x, y, z); // Output: 4 5 6
+  }
+
+  console.log(x, y, z); // Output: 4 2 3
+}
+
+test();
+In this example, var x is accessible both inside and outside of the if block because it has function scope. let y and const z are only accessible within their respective blocks. When the if block is executed, var x is reassigned to 4 and let y and const z are also declared and assigned new values, but they only exist within the block. When the function is called, console.log(x, y, z) outputs 4 2 3 because var x was reassigned inside the if block, but let y and const z were not.
+

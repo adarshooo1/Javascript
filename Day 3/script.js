@@ -29,3 +29,19 @@ console.log(d.slice(0,3))//KUM --> Because it will print 1 less.
 console.log(d.slice(0 , c.length))//Kumkum
 console.log(d.slice(0,d.length -1))//kumku
 
+
+// String Concatination
+let e = "Manju"
+let f = "Singh"
+let newString = e + " " + f
+console.log(newString)
+
+console.log(e.concat(" "+f))
+
+//Template String
+let firstName2 = "Adarsh Singh"
+let age = 22;
+let aboutme = "My name is " + firstName2 + " and my age is "+age 
+console.log(aboutme)
+let aboutme2 = `My name is ${firstName2} and my age is ${age}`
+console.log(aboutme2)

@@ -1,4 +1,4 @@
-//String Indedxing
+//String Indexing
 let firstName = "Adarsh";
 // A D A R S H
 // 0 1 2 3 4 5

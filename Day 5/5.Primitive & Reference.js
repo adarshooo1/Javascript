@@ -15,3 +15,5 @@ console.log(arr1 + "---" + arr2)
 arr1.push("Item3" , "Item4")
 console.log(arr1 + "---" + arr2)
 
+//To check both are reference to the same array or not.
+console.log(array1 === array2) //#output:- True, Which means they are pointing to the same array.

@@ -152,7 +152,7 @@ const userCart = [
 
 const Total = userCart.reduce((totalprice , currentProduct)=> {
     return totalprice + currentProduct.price
-},0) 
+},0) //Here we set 0, so we can mark the inital amount to be 0.
 
 console.log(Total);
 //Vizualization:

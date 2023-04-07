@@ -89,3 +89,26 @@ console.log(noobie1)
 const noobie2  = [..."Adarsh"]
 console.log(noobie2)
 //[ 'A', 'd', 'a', 'r', 's', 'h' ]
+
+//////////////////////////////////////////////////////
+
+//They all are called Object Literal
+const person = {
+    'firstName':"Harshit",
+    'age' :21 ,
+     1 : "One"
+}
+console.log(person.firstName)
+//NOTE: Inside the object every key are stored as a 99% String and 1% symbol.
+
+for(let val in person){
+  console.log(typeof val)
+//output:
+      // string
+      // string
+      // string
+//Because key are the type of string and we can add any data of any datatype inside the key Example FirstName , Age , 2; All are string if it is a key.
+
+//NOTE: We can use only for-In loop in the Objects Iteration, Not the for-of loop.
+
+}

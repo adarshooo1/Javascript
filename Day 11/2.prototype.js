@@ -18,7 +18,7 @@ hello.prototype.xyz = "xyz"
 hello.prototype.sing = function()  {
     return "lalallaall";
 }
-console.log(hello.prototype.anc)
-console.log(hello.prototype.abc)
-console.log(hello.prototype.xyz)
-console.log(hello.prototype.sing())
+console.log(hello.prototype.anc)//undefined
+console.log(hello.prototype.abc)//abc
+console.log(hello.prototype.xyz)//xyz
+console.log(hello.prototype.sing())//lalallaall

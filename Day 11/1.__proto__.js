@@ -18,7 +18,7 @@ const userAbt2 = user1.is18();
 console.log(userAbt2) 
 
 //Below we can see that if we have to do for the large range of the data then the task is gonna to be so Hectic.
-//So, We can create a function which takes all te values in the arguement and then we can call it. As the data and range of data increased.
+//So, We can create a function which takes all the values in the arguement and then we can call it. As the data and range of data increased.
 
 
 

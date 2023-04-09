@@ -11,6 +11,7 @@ const user1 = {
         return this.age >= 18;
     }
 }
+
 const userAbt1 = user1.about();
 console.log(userAbt1) 
 const userAbt2 = user1.is18();
@@ -27,7 +28,7 @@ console.log(userAbt2)
 
 function createUser(firstName , lastName ,age, email ,address){
     // const user2 = {};//We can create a empty object like this.
-    const user2 = Object.create(userMethod)
+    const user2 = Object.create(userMethod) //This is the [[protoype]] method which is doing liking between userMethod and createUser
     user2.firstName = firstName;
     user2.lastName = lastName;
     user2.email = email;
@@ -54,3 +55,4 @@ console.log(user3)
 console.log(user3.about());
 console.log(user3.is18());
 
+// In the Official EcmaScript This __proto__ is written as this [[Prototype]]

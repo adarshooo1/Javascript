@@ -18,6 +18,7 @@ user.about();//It works withouth linking Ex: const user = Object.create(createUs
 
 
 //Example 2:
+//This is Called as a Constructor, Because here we are creating a new objecct. And constructor with the new word written in the Capitalize letter.
 function CreateUser(firstName , lastName ,age, email ,address){
     // const user2 = {};//We can create a empty object like this.
     // const user2 = Object.create(createUser.prototype) //Now when we comment it of still we can use this because we are using a new keyword which will automatically establish linking between the function prototype with the object
@@ -44,3 +45,37 @@ console.log(user3.about())
 console.log(user3.is18())
 
 //So like this we can simply do this with the new keyword and this keyword.
+
+//Lets check the keys in the user3 Object:
+
+//This will print all the key which is the type __proto__
+for(let key in user3){
+    console.log(key)
+}
+
+//This will only call that key which is called in the constructor not in that function which is using function free space named prototype.
+for(let key in user3){
+    if(user3.hasOwnProperty(key)){
+        console.log(key)
+    }
+}
+
+//Internally how array is created.
+const number = new Array(1,2,3);
+console.log(number)
+
+//getOwnPropertyNames
+console.log(Object.getOwnPropertyNames(Array.prototype)); //Object(0) [], Interanlly this will print all the function list that is used by array.
+//// else
+//for (let prop in Array.prototype) {
+//      console.log(prop);
+//}
+
+
+function max(){
+    console.log("mood")
+}
+console.log(max.prototype) //Output:{} ,Print this because when javascript created then by defalult is array[] but when we use this in {} curly braces then it becomes object. So how to change the prototype.
+max.prototype = [];
+console.log(max.prototype)//Outpur:[], Printing this beause now it is cahnaged
+console.log(Object.getOwnPropertyNames(max.__proto__));//['length','name','arguments','caller','constructor','apply','bind','call','toString']

@@ -4,7 +4,7 @@ color: aliceblue;
 }
 
 .Wallpaper{
-    height: 100vh;
+    height: 80vh;
     background:url(./black\ Back.jpg)no-repeat center center/cover;
     overflow: hidden;
 }
@@ -21,7 +21,7 @@ color: aliceblue;
     flex-direction: row;
     width: 90%;
     height: 3rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     margin: 1rem;
@@ -43,18 +43,15 @@ h1{
 .left{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: left;
 
 }
 nav{
     margin: 0 2rem;
 }
 ul{
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 0 3rem;
+    display: flex;
+    justify-content: left;
 }
 li{
     list-style: none;
@@ -86,4 +83,10 @@ button{
     font-weight: 900;
     margin: 0 4rem;
     cursor: pointer;
+}
+
+section.bottom-section{
+    width: 80%;
+    background: #2f2f2f;
+    color: #fff;
 }

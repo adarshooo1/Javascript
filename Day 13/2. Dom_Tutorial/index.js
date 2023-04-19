@@ -20,14 +20,15 @@ console.log(h2tags1)
 //select element using query selector. This will work for classes and id both and it will return the very first item which has this class or id.. Work Better in Browser to run the code;
 
 // For Id:
-const h2tags2 = document.querySelector("#main-headline");
+const h2tags2 = document.querySelector('#main-headline');
 h2tags2.textContent = "Manage Todo and Task";
 console.log(h2tags2.textContent);
 
 // For class:
-const header = document.getElementById("main-headline");
-header.textContent = "Hello World"//Like this we can replace any text from the DOM from the webpage.
-console.log(header)
+const myButton = document.querySelector('.btn');
+myButton.addEventListener('click', () => {
+  alert("Button clicked!");
+});
 
 // select elemetn using query selector all will show all the id and class.
 const header = document.getElementById("main-headline");

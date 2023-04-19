@@ -20,12 +20,13 @@ console.log(h2tags1)
 //select element using query selector. This will work for classes and id both and it will return the very first item which has this class or id.. Work Better in Browser to run the code;
 
 // For Id:
-const headline = document.querySelectorAll("#main-headline");
+const headline = document.querySelector("#main-headline");
+headline.textContent = "Manage Your Trip"
 console.log(headline)
 
 // For class:
 const myButton2 = document.querySelector('.btn');
-myButton.addEventListener('click', () => {
+myButton2.addEventListener('click', () => {
   alert("Button clicked!");
 });
 

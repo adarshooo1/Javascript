@@ -21,7 +21,7 @@ console.log(h2tags1)
 
 // For Id:
 const headline = document.querySelector("#main-headline");
-headline.textContent = "Manage Your Trip"
+headline.textContent = "Manage Your Grip"
 console.log(headline)
 
 // For class:
@@ -34,6 +34,15 @@ myButton2.addEventListener('click', () => {
 const header = document.querySelectorAll("#main-headline");
 console.log(header)//This will show all id in the form of array but not actual array.
 
+// As like textContent we have innerText which will show the innertext of the particular id, class or tag not other in the webpage. And Text content will show all the content present inside the tag weather the css of the particular class or div is display none.
+const inner = document.querySelector("main-headline");
+console.log(inner.innerText)
+
+//Chang the style of elements with javascript:
+const linen = document.querySelector('div.headline h2');
+console.log(linen.style)//This will show all the css property applied to this class, id or tag.
+linen.style.background = "Black";//This will give give the background color of the element.
+linen.style.borderBottom = "2px solid Red"//This will give border bottom to the element.
 
 
   

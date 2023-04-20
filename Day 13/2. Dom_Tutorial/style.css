@@ -122,6 +122,10 @@ form.form-todo{
     padding-top: 16px;
 }
 
+/* .InnerExample{
+    display: none;
+} */
+
 .signup-form{
     max-width:800px;
     width: 95%;

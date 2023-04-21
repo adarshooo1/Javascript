@@ -40,3 +40,21 @@ console.log(parentnode);//This will call the parent html.
      parentnode.style.paddingTop = "10px"
      parentnode.style.paddingLeft = "6px"
      parentnode.style.paddingRight = "6px"
+
+
+// Toggle:
+
+// In JavaScript, the toggle() method is used to add or remove a class from an element. If the element already has the class, toggle() removes it, otherwise, it adds the class to the element.
+
+const contain = document.querySelector('.container');
+
+console.log(contain.classList);
+
+// This will check that is the contain which is pointing to the html .container class , is there any container class is present or not. and return the answer in Boolean.
+const ans = contain.classList.contains("container")
+console.log(ans)//True.
+
+//So we can use toggle like this.
+
+contain.classList.toggle("bg-red");//Now a .bg-red named class is added with container class also is .bg-red is not present , If present then it will remove the class..
+contain.classList.toggle("bg-red");//Now it remove the bg-red class because in the previous line we used to toggle it , which add this class and we again toggle it so , it remive this class.

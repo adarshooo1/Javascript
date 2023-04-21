@@ -57,3 +57,14 @@ navItems3.forEach(item =>{
     item.style.backgroundColor = "purple"
     item.style.fontSize = "1.3rem"
 })
+/////////////////////////////////////////////////////////////////////////
+//To make array from (node list and Html Collection).
+
+//Html collection to array.
+let navItems4 = document.getElementsByClassName("nav-item");//In get element by class name we only have to pass string name. not will .nav-item same as getElementByTagName();
+navItems4 = Array.from(navItems4);
+
+
+// Nodelist to Array 
+let navItems5 = document.querySelectorAll('a');
+navItems5 = Array.from(navItems5); 

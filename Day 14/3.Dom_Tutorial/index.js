@@ -28,7 +28,7 @@ btnStyle.style.fontWeight = "bold"
 btnStyle.style.fontSize = "1rem"
 
 //Dom Traversing:
-const selected = document.querySelector("#main-headline")
+const selected = document.querySelector("#main-headline")//Here we select the child item then move to the parent in the below line.
 const parentnode  = selected.parentNode;
 console.log(parentnode);//This will call the parent html.
      //<div class="headline"><h1 id="main-headline">Inner Html Example</h1><button class="btn" style="width: 5rem; height: 2rem; border-radius: 3px; background-color: rgb(100, 101, 101); color: pink; font-weight: bold; font-size: 1rem;">Confirm</button></div>

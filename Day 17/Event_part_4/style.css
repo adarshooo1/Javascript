@@ -1,5 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 .my-button button{
     background: #737171;
     color: aqua;
 }
+
+main{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30vh;
+
+}
+
+
+h1{
+    background-color: #333;
+    color: #efefef;
+    border-radius: 1rem;
+    width: 35rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.container button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.4s  ;
+}
+
+div.container button:hover{
+    background-color:#fff ;
+}
+
+
+

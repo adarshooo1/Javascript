@@ -1,0 +1,25 @@
+Intro to Events:
+In JavaScript, an event is any user or browser action that triggers some code to run. Events can include mouse clicks, mouse movements, keyboard inputs, and more.
+
+To handle events in JavaScript, you typically use event listeners. An event listener is a function that is called whenever a specific event occurs. To add an event listener to an element, you can use the addEventListener method, like this:
+
+//////////////////////////////////////////////////////////////
+javascript
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', function() {
+  // code to run when the button is clicked
+});
+
+//////////////////////////////////////////////////////////////
+
+In this example, the addEventListener method is called on the button element, with the event type 'click' and a callback function that will be called when the button is clicked.
+
+There are many different types of events that can be handled in JavaScript, and you can find a full list of them in the MDN Web Docs. Some commonly used events include:
+
+1.click: Triggered when a mouse button is clicked on an element.
+2.keydown: Triggered when a key on the keyboard is pressed down while an element has focus.
+3.mousemove: Triggered when the mouse is moved over an element.
+4.submit: Triggered when a form is submitted.
+By handling events in JavaScript, you can create interactive and dynamic web applications that respond to user input.

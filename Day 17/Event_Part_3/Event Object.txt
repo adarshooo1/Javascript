@@ -1,0 +1,15 @@
+At the any element in html we will add Event Listner;
+
+Now:-js Engine --- will execute code Line by Line;
+    Browser ----js Engine + Extra features;
+    Browser ----js Engine + WebApi;
+
+When Browser get to know that any event is performed on it by the user;
+Which we are trying to Listen
+
+Browser ---- will do 2 work;
+1.)Callback function will return to the js engine;
+2.)Callback function will give the information to the js Engine that what type of event is perfored;
+
+And we get this info in the form of object;
+

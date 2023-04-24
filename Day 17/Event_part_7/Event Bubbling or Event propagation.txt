@@ -1,0 +1,6 @@
+Event bubbling is the process by which an event triggered on a nested element
+"bubbles up" through its ancestors in the document object model (DOM) until it
+reaches the outermost ancestor. This means that when an event occurs on a child 
+element, it will also trigger any event listeners attached to its parent, grandparent,
+and so on, up to the root of the document. Event bubbling is the default behavior in
+most modern web browsers.

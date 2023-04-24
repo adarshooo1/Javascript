@@ -1,0 +1,4 @@
+Event capturing is the opposite of event bubbling, where events are captured by
+the outermost ancestor of a nested element before propagating down to the targeted
+element. This is less commonly used than event bubbling but can be useful in certain
+cases, such as when you need to intercept an event before it reaches the targeted element.

@@ -1,0 +1,7 @@
+Event delegation is a technique used to handle events efficiently by
+attaching a single event listener to a parent element rather than multiple
+event listeners to its nested children. This is achieved by taking advantage
+of event bubbling, where an event that occurs on a child element will also
+propagate up to its parent element. When the parent element receives the event,
+it can use the event.target property to determine which child element the event
+originated from and perform the necessary action.

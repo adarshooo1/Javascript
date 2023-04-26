@@ -61,7 +61,7 @@ const intervalId = setInterval(()=>{
 },100);
 
 // Adding a Event Listner when we click
-stopbtn.addEventListener("submit" , ()=>{
+stopbtn.addEventListener("click" , ()=>{
     clearInterval(intervalId);//Removing interval which is running
 
     // Show the color of the body in the button when click stop changing! button;

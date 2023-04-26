@@ -1,0 +1,12 @@
+you ask your friend to bring you a toy from their house.
+They promise to bring it to you, but they might take some
+time to find it and bring it back.
+
+In JavaScript, a promise works the same way. You ask your
+code to do something, and it promises to do it for you, but
+it might take some time to complete the task.
+
+When the task is done, the promise will either give you the
+result you asked for, or it will tell you that something went wrong.
+So, just like with your friend, you can trust that the promise will
+come through for you, even if it takes a little bit of time.

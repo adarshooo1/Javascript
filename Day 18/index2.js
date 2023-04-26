@@ -154,5 +154,3 @@ console.log("End")
 // 99
 // End
 // Inside setTimeOut  //Without setTimeout;
-
-

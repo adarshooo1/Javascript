@@ -1,0 +1,37 @@
+Ajax (Asynchronous JavaScript and XML)
+Ajax is a web development technique used to create fast and dynamic web
+pages. It allows web pages to request and receive data from the server without requiring a page refresh,
+which makes web applications more responsive and interactive.
+
+Ajax uses a combination of technologies, including HTML, CSS, JavaScript, and XML or JSON
+(JavaScript Object Notation), to update parts of a web page asynchronously, without requiring the user
+to reload the entire page. Instead, Ajax sends and receives data in the background,
+making the web application feel more like a desktop application.
+
+Ajax is widely used in modern web development and is supported by most web browsers.
+It has many applications, including dynamic form validation, search engine autosuggest,
+and real-time chat. However, it can also introduce security vulnerabilities if not implemented properly,
+such as cross-site scripting (XSS) attacks.
+
+/////////////////////////////////////////////////////////
+Basic Theory:
+
+Hyper Text Transfer Protocol.
+We need to know HTTP requests , call API , creating data in the server , updating data in the server. So, Basically communication between client and Server
+
+is a set if "web Development techniques"
+using many web technologies in the "client-side'
+to create Asynchronous web application.
+
+With Ajax , web application can send and retrieve
+data from a server asynchronously (in the background)
+without interfering with the display and behaviour
+of the existing page
+
+we don't use data in xml format anymore
+we use json now. 
+
+We have 3 mos commin ways to create and send request to server.
+1.xmlHTTPRequest (old way of doing)
+2.fetch application (new way of doing)
+3.Axioz (this is a third party library)

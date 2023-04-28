@@ -33,6 +33,43 @@ sendRequest("GET" , URL)
         return data;
     })
     .then(data =>{
-        console.log(data[4].id);
+        const id = data[3].id;
+        return id;
     })
-    .catch()
+    .then(id =>{
+        const URL2 = `${URL}/${id}`
+        // console.log(sendRequest("GET",URL2));
+        // Promise {<pending>}
+        //     [[Prototype]]
+        //     : 
+        //     Promise
+        //     [[PromiseState]]
+        //     : 
+        //     "fulfilled"
+        //     [[PromiseResult]]
+        //     : 
+        //     "{\n  \"userId\": 1,\n 
+        return sendRequest("GET", URL2 )
+    })
+    .then(newResponse => {
+
+        console.log(newResponse)
+        // {
+        //     "userId": 1,
+        //     "id": 4,
+        //     "title": "eum et est occaecati",
+        //     "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+        //   }
+
+        // console.log(typeof newResponse)  //Output :string
+
+        const jsonFormatNewData = JSON.parse(newResponse);
+        console.log(jsonFormatNewData) // Output: {userId: 1, id: 4, title: 'eum et est occaecati', body: 'ullam et saepe reiciendis voluptatem adipisci\nsit … ipsam iure\nquis sunt voluptatem rerum illo velit'}
+        console.log(typeof jsonFormatNewData) //Output:object
+
+    })
+
+
+    .catch(error =>{
+        console.log("Error");
+    })

@@ -1,0 +1,30 @@
+In JavaScript, the fetch() method is a Promise-based function that is used to make asynchronous network
+requests to fetch resources from a server. When you call fetch(), it returns a Promise that resolves
+to a Response object containing the response from the server.
+
+You can then use various methods such as json(), text(), or blob() on the response object to extract
+the data you need from the server response. Since fetch() returns a Promise, you can use the
+.then()
+.catch()
+methods to handle the response and any errors that might occur during the network request.
+
+
+
+fetch('https://example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+
+In this example, we're using fetch()
+to make a network request to https://example.com/data.
+The response is then converted to JSON using the json() method,
+and the resulting data is logged to the console. If there's an error
+during the request, it will be caught and logged to the console using the catch() method.
+
+
+
+
+
+
+

@@ -34,9 +34,9 @@ console.log(d.slice(0,d.length -1))//kumku
 let e = "Manju"
 let f = "Singh"
 let newString = e + " " + f
-console.log(newString)
+console.log(newString) //Manju Singh
 
-console.log(e.concat(" "+f))
+console.log(e.concat(" "+f)) //Manju Singh
 
 //Template String
 let firstName2 = "Adarsh Singh"

@@ -125,7 +125,7 @@ console.log(
 var hoistedVar = "I,m Hoisted";
 console.log(hoistedVar); //I'm hoisted
 
-// console.log(hoistedVar2); // ReferenceError : Cannot access 'hoistedVar2' before initialization || Aka : Temporal Dead Zone.
+// console.log(hoistedVar2); // ReferenceError : Cannot access 'hoistedVar2' before initialization || Aka : Temporal Dead Zone. Because unable to access before declaration.
 let hoistedVar2 = "I'm in the TDZ";
 console.log(hoistedVar2);
 

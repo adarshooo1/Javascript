@@ -144,6 +144,21 @@ console.log("=================IIFE================");
   console.log("I am an LIFE!");
 })();
 
+(function () {
+  var privateVariable = "I am Private";
+  console.log(privateVariable);
+})();
+
+var result = function () {
+  var message = "Hello from IIFE";
+  return message;
+};
+console.log(result);
+
+(function (name) {
+  console.log("ny name is " + name);
+})("Adarsh");
+
 // ----------------------------------------------------
 function greet2() {
   console.log("Inside Greet2, 1");

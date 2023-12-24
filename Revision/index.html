@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listeners</title>
+    <style>
+      .hoverDiv {
+        height: 30vh;
+        width: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background: black;
+        font-size: xx-large;
+      }
+
+      #parent {
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: crimson;
+      }
+
+      #child {
+        height: 100px;
+        width: 100px;
+        background-color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form id="nameForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+      </form>
+    </div>
+    <button type="submit" id="myButton">Submit</button>
+
+    <div class="hoverDiv">Hover Over Div</div>
+    <button id="counter" onclick="handleCounter()">click me</button>
+    <input type="text" id="counterField" value="0" readonly />
+
+    <button id="myElement">Handle</button>
+
+    <ul id="myList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <div id="parent">
+      <div id="child"></div>
+    </div>
+
+    <div>
+      <input id="input" type="text" />
+    </div>
+    <div>
+      Default :
+      <span id="default"></span>
+    </div>
+    <div>
+      Debounce :
+      <span id="debounce"></span>
+    </div>
+    <div>
+      Throttle :
+      <span id="throttle"></span>
+    </div>
+  </body>
+  <script src="EventListeners.js"></script>
+</html>

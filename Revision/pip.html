@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revise</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .container {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="UpperPart">
+        <input id="input" type="text" placeholder="Enter your name" />
+      </div>
+      <div class="LowerPart">
+        <div class="input">
+          Default :
+          <span id="default"></span>
+        </div>
+        <div class="debounce">
+          Debounce:
+          <span id="debounce"></span>
+        </div>
+        <div class="throttle">
+          Throttle:
+          <span id="throttle"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const inputText = document.getElementById("input");
+    const defaultText = document.getElementById("default");
+    const debounceText = document.getElementById("debounce");
+    const throttleText = document.getElementById("throttle");
+
+    const updateDebounce = debounce((userTaps) => {
+      debounceText.textContent = userTaps;
+    });
+
+    const updateThrottle = throttle((userTaps) => {
+      throttleText.textContent = userTaps;
+    });
+
+    inputText.addEventListener("input", (e) => {
+      defaultText.textContent = e.target.value;
+      updateThrottle(e.target.value);
+      updateDebounce(e.target.value);
+    });
+
+    function debounce(callback, delay = 400) {
+      let intervalId;
+      return function (...args) {
+        clearInterval(intervalId);
+        intervalId = setTimeout(function () {
+          callback(...args);
+        }, delay);
+      };
+    }
+
+    function throttle(callback, delay = 500) {
+      let isWaiting = false;
+      let waitingArguments;
+      let RecursiveFunction = () => {
+        if (waitingArguments == null) {
+          isWaiting = false;
+        } else {
+          callback(...waitingArguments);
+          waitingArguments = null;
+          setTimeout(RecursiveFunction, delay);
+        }
+      };
+
+      return (...args) => {
+        if (isWaiting) {
+          waitingArguments = args;
+          return;
+        }
+
+        callback(...args);
+        isWaiting = true;
+
+        setTimeout(RecursiveFunction, delay);
+      };
+    }
+  </script>
+</html>

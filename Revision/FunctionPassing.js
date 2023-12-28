@@ -1,3 +1,8 @@
+// Why functions are called first class citizens in Javascript ?
+// 1. Assign function to a variable
+// 2. pass function as arguments to another function.
+// 3. Return function to another function.
+
 // Basic Function Passing
 
 // Example 1

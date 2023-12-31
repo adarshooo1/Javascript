@@ -73,16 +73,16 @@
     }
 
     function throttle(callback, delay = 500) {
-      let isWaiting = false;
-      let waitingArguments;
-      let RecursiveFunction = () => {
-        if (waitingArguments == null) {
-          isWaiting = false;
-        } else {
-          callback(...waitingArguments);
-          waitingArguments = null;
-          setTimeout(RecursiveFunction, delay);
-        }
+        let isWaiting = false;
+        let waitingArguments;
+        let RecursiveFunction = () => {
+          if (waitingArguments == null) {
+            isWaiting = false;
+          } else {
+            callback(...waitingArguments);
+            waitingArguments = null;
+            setTimeout(RecursiveFunction, delay); 
+          }
       };
 
       return (...args) => {
